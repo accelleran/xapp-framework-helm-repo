@@ -42,7 +42,7 @@ securityContext:
   runAsUser: 0
 
 service:
-  type: NodePort
+  type: ClusterIP
   #nodePort: 31802
   port: 6379
   name: "xapp-redis-svc"

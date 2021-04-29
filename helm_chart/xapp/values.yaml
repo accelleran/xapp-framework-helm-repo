@@ -130,7 +130,7 @@ securityContext:
   runAsUser: 1000
 
 service:
-  enabled: true
+  enabled: false
   type: ClusterIP
   port: 80
   # If NodePort is used as type, one can specify the exact nodePort, otherwise it will be
@@ -142,7 +142,7 @@ sshService:
   name: "xapp-ssh"
   type: NodePort
   port: 22
-  nodePort: 30950
+  #  nodePort: 30950
 
 ingress:
   enabled: false
