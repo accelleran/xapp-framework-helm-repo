@@ -136,10 +136,16 @@ service:
   # If NodePort is used as type, one can specify the exact nodePort, otherwise it will be
   # picked by Kubernetes
   # nodePort: 30503
+  
+restService:
+  enabled: true
+  type: ClusterIP
+  port: 8888
+  name: "core-api"
 
 sshService:
   enabled: true
-  name: "xapp-ssh"
+  name: "dev-ssh"
   type: NodePort
   port: 22
   #  nodePort: 30950

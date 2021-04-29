@@ -13,6 +13,6 @@ spec:
       {{ end }}
       targetPort: http
       protocol: TCP
-      name: http
+      name: {{ .Values.service.name }}
   selector:
     {{- include "xapp-api.selectorLabels" . | nindent 4 }}

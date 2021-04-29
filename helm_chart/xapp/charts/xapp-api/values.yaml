@@ -49,6 +49,7 @@ service:
   type: NodePort
   # nodePort: 31801
   port: 80
+  name: "xapp-api"
 
 ingress:
   enabled: false

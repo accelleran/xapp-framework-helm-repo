@@ -77,8 +77,7 @@ spec:
               mountPath: /home/xapp/xapp-core/xapp_configuration.json
               subPath: "xapp_configuration.json"
           ports:
-            - containerPort: {{ .Values.service.port }}
-            - containerPort: 8888
+            - containerPort: {{ .Values.restService.port }}
             - containerPort: {{ .Values.sshService.port }}
 #          livenessProbe:
 #            httpGet:
