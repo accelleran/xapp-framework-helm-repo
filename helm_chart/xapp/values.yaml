@@ -144,7 +144,6 @@ restService:
   name: "core-api"
 
 sshService:
-  enabled: true
   name: "dev-ssh"
   type: NodePort
   port: 22

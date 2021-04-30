@@ -78,7 +78,9 @@ spec:
               subPath: "xapp_configuration.json"
           ports:
             - containerPort: {{ .Values.restService.port }}
+            {{ if .Values.developerMode.enabled }}
             - containerPort: {{ .Values.sshService.port }}
+            {{ end }}
 #          livenessProbe:
 #            httpGet:
 #              path: /
