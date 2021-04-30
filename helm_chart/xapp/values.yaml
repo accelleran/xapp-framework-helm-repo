@@ -128,14 +128,6 @@ securityContext:
   # readOnlyRootFilesystem: true
   runAsNonRoot: true
   runAsUser: 1000
-
-service:
-  enabled: false
-  type: ClusterIP
-  port: 80
-  # If NodePort is used as type, one can specify the exact nodePort, otherwise it will be
-  # picked by Kubernetes
-  # nodePort: 30503
   
 restService:
   enabled: true
