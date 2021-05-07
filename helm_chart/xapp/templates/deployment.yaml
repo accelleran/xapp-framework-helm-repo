@@ -47,6 +47,11 @@ spec:
             - name: {{ include "xapp_core.fullname" . }}-config
               mountPath: /home/xapp/xapp-core/xapp_configuration.json
               subPath: "xapp_configuration.json"
+            {{ if .Values.developerMode.enabled }}
+            - name: {{ include "xapp_core.fullname" . }}-readme
+              mountPath: /home/xapp/xapp-core/README.md
+              subPath: "README.md"
+            {{ end }}
       containers:
         - name: {{ .Chart.Name }}
           securityContext:
@@ -76,6 +81,11 @@ spec:
             - name: {{ include "xapp_core.fullname" . }}-config
               mountPath: /home/xapp/xapp-core/xapp_configuration.json
               subPath: "xapp_configuration.json"
+            {{ if .Values.developerMode.enabled }}
+            - name: {{ include "xapp_core.fullname" . }}-readme
+              mountPath: /home/xapp/xapp-core/README.md
+              subPath: "README.md"
+            {{ end }}
           ports:
             - containerPort: {{ .Values.restService.port }}
             {{ if .Values.developerMode.enabled }}
@@ -112,6 +122,11 @@ spec:
         - name: {{ include "xapp_core.fullname" . }}-config
           configMap:
             name: {{ include "xapp_core.fullname" . }}-config
+        {{ if .Values.developerMode.enabled }}
+        - name: {{ include "xapp_core.fullname" . }}-readme
+          configMap:
+            name: {{ include "xapp_core.fullname" . }}-readme
+        {{ end }}
             #        {{ if .Values.developerMode.enabled }}
             #        - name: dev-work-dir
             #          hostPath:
