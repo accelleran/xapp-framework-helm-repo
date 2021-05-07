@@ -22,6 +22,7 @@ data:
     Click on the "SHOW" button under the Services column. Here you can see the service of the xApp. One of them is the "dev-ssh" service.
 
     The exposed port is the NodePort. You can use this port to ssh into the xApp Development Environment. You can do so using the following command from your local machine:
+
     ```shell
     ssh -p <dev-ssh-node-port> xapp@<kubernetes-ip>
     ```
