@@ -3,7 +3,7 @@ entries:
   xapp:
   - apiVersion: v2
     appVersion: 0.4.0
-    created: "2021-05-07T13:51:31.8938512+02:00"
+    created: "2021-05-07T13:54:42.7905795+02:00"
     dependencies:
     - condition: xapp-redis.enabled
       name: xapp-redis
@@ -14,7 +14,7 @@ entries:
       repository: https://accelleran.github.io/helm-charts/
       version: 0.6.0
     description: A Helm chart for Accelleran dRAX xApp
-    digest: 5a8436913a0a777f07ea8c80af3403adbac154466a01726e72c5b80cc41928ee
+    digest: 2061c38e76a742386cc781f5cb6361fdca6410b52766c868538b333ad8acd6e2
     name: xapp
     type: application
     urls:
@@ -22,7 +22,7 @@ entries:
     version: 0.4.1
   - apiVersion: v2
     appVersion: 0.4.0
-    created: "2021-05-07T13:51:31.8898823+02:00"
+    created: "2021-05-07T13:54:42.7855917+02:00"
     dependencies:
     - condition: xapp-redis.enabled
       name: xapp-redis
@@ -39,4 +39,4 @@ entries:
     urls:
     - https://accelleran.github.io/xapp-framework-helm-repo/helm_chart/xapp-0.4.0.tgz
     version: 0.4.0
-generated: "2021-05-07T13:51:31.8858977+02:00"
+generated: "2021-05-07T13:54:42.7816026+02:00"

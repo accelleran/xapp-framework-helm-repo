@@ -22,9 +22,9 @@ data:
     Click on the "SHOW" button under the Services column. Here you can see the service of the xApp. One of them is the "dev-ssh" service.
 
     The exposed port is the NodePort. You can use this port to ssh into the xApp Development Environment. You can do so using the following command from your local machine:
-    '''
+    ```shell
     ssh -p <dev-ssh-node-port> xapp@<kubernetes-ip>
-    '''
+    ```
 
     The default username in the xApp Development Environment is "xapp", while the password for that user is chosen on the deployment of the xApp Development Environment.
 
@@ -32,9 +32,9 @@ data:
 
     Once you ssh into the xApp Development Environment, you will find yourself in the home directory of the xapp user. Here, the xapp-core fodler will be located with the Xapp Core Python template. Inside that folder you can run:
 
-    '''
+    ```shell
     python3 xapp_main.py
-    '''
+    ```
 
     Which will run the xApp.
 
@@ -56,19 +56,22 @@ data:
     If you wish to edit the xApp core files that are found in the xApp Development Environment, you ccan use the sshfs tool. This tool will mount the rmeote files from the xApp Development Environment onto your local machine. From that point on, you can edit the files in your own local IDE of your chosing. The changes automatically get forwarded to the xApp Development Environment.
 
     You can install sshfs using the following command:
-    '''
+
+    ```shell
     sudo apt install -y sshfs
-    '''
+    ```
 
     Next create a folder where you will mount the remote files:
-    '''
+
+    ```shell
     mkdir /path/to/remote-xap-dev
-    '''
+    ```
 
     Finally us ethe sshfs command to mount the files:
-    '''
+
+    ```shell
     sshfs -p <dev-ssh-node-port> xapp@<kubernetes-ip>:/home/xapp/xapp-core /path/to/remote-xap-dev
-    '''
+    ```
 
     The xapp-core files will now be available in the "remote-xap-dev" folder you just created.
 
