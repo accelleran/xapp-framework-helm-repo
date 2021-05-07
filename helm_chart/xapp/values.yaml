@@ -99,8 +99,8 @@ xappConfig:
     value: 20
   - name: 'KAFKA_LISTEN_TOPICS'
     type: string
-    value: 'test2, Topic_State'
-    # value: 'accelleran.drax.4g.ric.raw.messages,accelleran.drax.4g.ric.raw.ue_measurements,accelleran.drax.4g.ric.raw.service_discovery,accelleran.drax.4g.ric.processed.network_state,accelleran.drax.5g.ric.raw.ue_measurements,accelleran.drax.5g.ric.raw.cu_state,accelleran.drax.5g.ric.processed.pm_counters,accelleran.drax.5g.ric.raw.pm_counters,accelleran.drax.5g.ric.raw.messages,accelleran.drax.all.ric.processed.anr'
+    #value: 'test2, Topic_State'
+    value: 'accelleran.drax.4g.ric.raw.messages,accelleran.drax.4g.ric.raw.ue_measurements,accelleran.drax.4g.ric.raw.service_discovery,accelleran.drax.4g.ric.processed.network_state,accelleran.drax.5g.ric.raw.ue_measurements,accelleran.drax.5g.ric.raw.cu_state,accelleran.drax.5g.ric.processed.pm_counters,accelleran.drax.5g.ric.raw.pm_counters,accelleran.drax.5g.ric.raw.messages,accelleran.drax.all.ric.processed.anr'
   - name: 'periodic_publish'
     type: bool
     value: true
