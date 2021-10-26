@@ -60,7 +60,7 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           {{ if .Values.developerMode.enabled }}
           command:
-            - sh 
+            - sh
             - "-c"
             - |
               /bin/bash <<'EOF'

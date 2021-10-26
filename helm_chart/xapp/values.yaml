@@ -4,7 +4,7 @@
 
 ### Global variable indicating the dRAX machine IP
 global:
-  kubeIp: "172.31.33.39"
+  kubeIp: "10.55.1.2"
   draxNodeSelectorEnabled: "false"
   draxName: "main"
 
@@ -54,8 +54,8 @@ imagePullSecrets:
 
 developerMode:
   enabled: false
-  hostPath: /home/user/folder
-  devPassword: "dev"
+  hostPath: ""
+  devPassword: "password1!"
 
 nameOverride: ""
 fullnameOverride: ""
@@ -99,7 +99,6 @@ xappConfig:
     value: 20
   - name: 'KAFKA_LISTEN_TOPICS'
     type: string
-    #value: 'test2, Topic_State'
     value: 'accelleran.drax.4g.ric.raw.messages,accelleran.drax.4g.ric.raw.ue_measurements,accelleran.drax.4g.ric.raw.service_discovery,accelleran.drax.4g.ric.processed.network_state,accelleran.drax.5g.ric.raw.ue_measurements,accelleran.drax.5g.ric.raw.cu_state,accelleran.drax.5g.ric.processed.pm_counters,accelleran.drax.5g.ric.raw.pm_counters,accelleran.drax.5g.ric.raw.messages,accelleran.drax.all.ric.processed.anr'
   - name: 'periodic_publish'
     type: bool
@@ -128,7 +127,7 @@ securityContext:
   # readOnlyRootFilesystem: true
   runAsNonRoot: true
   runAsUser: 1000
-  
+
 restService:
   enabled: true
   type: ClusterIP
