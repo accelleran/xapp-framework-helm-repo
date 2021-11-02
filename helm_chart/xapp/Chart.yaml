@@ -1,5 +1,5 @@
 apiVersion: v2
-name: xapp
+name: xapp-dev-env
 description: A Helm chart for Accelleran dRAX xApp
 
 # A chart can be either an 'application' or a 'library' chart.

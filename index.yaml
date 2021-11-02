@@ -3,7 +3,7 @@ entries:
   xapp:
   - apiVersion: v2
     appVersion: 0.4.0
-    created: "2021-10-26T12:26:16.321737891+02:00"
+    created: "2021-11-02T16:26:17.524750365+01:00"
     dependencies:
     - condition: xapp-redis.enabled
       name: xapp-redis
@@ -22,7 +22,7 @@ entries:
     version: 0.4.1
   - apiVersion: v2
     appVersion: 0.4.0
-    created: "2021-10-26T12:26:16.319810198+02:00"
+    created: "2021-11-02T16:26:17.522447736+01:00"
     dependencies:
     - condition: xapp-redis.enabled
       name: xapp-redis
@@ -39,4 +39,4 @@ entries:
     urls:
     - https://accelleran.github.io/xapp-framework-helm-repo/helm_chart/xapp-0.4.0.tgz
     version: 0.4.0
-generated: "2021-10-26T12:26:16.31776295+02:00"
+generated: "2021-11-02T16:26:17.520556218+01:00"
